@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Open 24 Display';
+    src: url('Open 24 Display St.ttf'); 
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #474646;
+}
+
+.contenedor {
+    perspective: 1000px;
+}
+
+.cubo {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(-40deg);
+}
+
+.cara {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, #2f2f2f, #1c1c1c);
+    border: 2px solid #000;
+    text-align: center;
+    line-height: 200px;
+    font-size: 100px;
+    font-family: 'Open 24 Display', sans-serif; 
+    color: #0f8;
+    text-shadow: 0 0 10px #0f8;
+    backface-visibility: hidden;
+}
+
+#horas {
+    transform: rotateY(-45deg) rotateX(0deg) translateZ(100px);
+}
+
+#minutos {
+    transform: rotateY(45deg) rotateX(0deg) translateZ(100px);
+}
+
+#segundos {
+    transform: rotateY(45deg) rotateX(90deg) translateZ(100px);
+}
+
+.oculto {
+    display: none;
+}

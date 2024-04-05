@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Cubo 3D</title>
+    <link rel="stylesheet" href="css/cubo.css">
+    </head>
+    <body>
+    <div class="contenedor" onmousemove="rotarCubo(event)">
+        <div class="cubo" id="cubo">
+        <div class="cara" id="horas" onclick="alternarHora()">12</div>
+        <div class="cara" id="minutos" onclick="alternarMinuto()">00</div>
+        <div class="cara" id="segundos" onclick="alternarSegundo()">00</div>
+        </div>
+    </div>
+    <script src="js/Cubo.js"></script>
+    </body>
+</html>
